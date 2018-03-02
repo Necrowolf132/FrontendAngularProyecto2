@@ -1,0 +1,32 @@
+.panelCargado {
+  border-radius: 80px 0px 90px;
+  border-style: inset;
+  border-top: 3px inset #000000;
+  border-bottom: 6px inset rgba(27, 124, 137, 0.45);
+  border-left: 3px inset #000000;
+  border-right: 6px inset rgba(27, 124, 137, 0.45);
+  background-color: rgba(235, 235, 235, 0.69);
+  transition: all 900ms ease-out;
+  opacity: 0;
+  transform: translateX(-139%);
+}
+
+.panelCargado .col {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.panelCargado p {
+  font-size: 1.5em;
+  margin-bottom: 24px;
+}
+
+.poner {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.quitar {
+  opacity: 0;
+  transform: translateY(-180%);
+}

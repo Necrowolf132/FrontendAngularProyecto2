@@ -1,0 +1,55 @@
+
+.panel1 {
+  line-height: 0px;
+  background-color: #ececec;
+  box-shadow: 4px 5px 15px 0px rgba(0, 0, 0, 0.55);
+}
+
+.Paneltitulos {
+  background-color: #51a3c2;
+  box-shadow: 3px 5px 4px 0px rgba(0, 0, 0, 0.56) , 10px 13px #4188b4;
+  margin-bottom: 1.4%;
+}
+
+.PaneltituloSec {
+  margin-bottom: 2.3%;
+}
+
+
+
+.Paneltitulos h4 {
+  margin: 0;
+  font-size: 2.0em;
+}
+
+.PaneltituloSec h5 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.4em;
+  padding: 5px 4px;
+  color: #1b7291;
+  border-radius: 0px 0px 24px;
+  background-color: #c7c7c7;
+}
+
+.panelLogin {
+  line-height: 1.5;
+}
+
+.panelLogin h5 {
+  color: #2c7694;
+  margin-bottom: 20px;
+}
+
+.panelLogin form {
+}
+
+.dosImputs {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filaBoton {
+  margin-bottom: 7px;
+}

@@ -1,0 +1,118 @@
+
+.appFondo{
+  width: 100%;
+  background-image: url('assets/img/blue-circuit-board_1527708.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-origin: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: center;
+  height: 100%;
+  background-color: #a2dbe6;
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+  flex-direction: column;
+  justify-content: space-around;
+}
+app-inicio, app-login{
+  width: 100%;
+  background: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.prefondo {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background: -moz-linear-gradient(-45deg, rgba(102,102,102,0.17) 0%, rgba(102,102,102,0.28) 14%, rgba(71,71,71,0.38) 26%, rgba(44,44,44,0.45) 35%, rgba(16,16,16,0.55) 47%, rgba(0,0,0,0.5) 54%, rgba(17,17,17,0.41) 66%, rgba(43,43,43,0.37) 72%, rgba(28,28,28,0.33) 77%, rgba(19,19,19,0.26) 87%, rgba(19,19,19,0.17) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(102,102,102,0.17)), color-stop(14%, rgba(102,102,102,0.28)), color-stop(26%, rgba(71,71,71,0.38)), color-stop(35%, rgba(44,44,44,0.45)), color-stop(47%, rgba(16,16,16,0.55)), color-stop(54%, rgba(0,0,0,0.5)), color-stop(66%, rgba(17,17,17,0.41)), color-stop(72%, rgba(43,43,43,0.37)), color-stop(77%, rgba(28,28,28,0.33)), color-stop(87%, rgba(19,19,19,0.26)), color-stop(100%, rgba(19,19,19,0.17)));
+    background: -webkit-linear-gradient(-45deg, rgba(102,102,102,0.17) 0%, rgba(102,102,102,0.28) 14%, rgba(71,71,71,0.38) 26%, rgba(44,44,44,0.45) 35%, rgba(16,16,16,0.55) 47%, rgba(0,0,0,0.5) 54%, rgba(17,17,17,0.41) 66%, rgba(43,43,43,0.37) 72%, rgba(28,28,28,0.33) 77%, rgba(19,19,19,0.26) 87%, rgba(19,19,19,0.17) 100%);
+    background: -o-linear-gradient(-45deg, rgba(102,102,102,0.17) 0%, rgba(102,102,102,0.28) 14%, rgba(71,71,71,0.38) 26%, rgba(44,44,44,0.45) 35%, rgba(16,16,16,0.55) 47%, rgba(0,0,0,0.5) 54%, rgba(17,17,17,0.41) 66%, rgba(43,43,43,0.37) 72%, rgba(28,28,28,0.33) 77%, rgba(19,19,19,0.26) 87%, rgba(19,19,19,0.17) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(102,102,102,0.17) 0%, rgba(102,102,102,0.28) 14%, rgba(71,71,71,0.38) 26%, rgba(44,44,44,0.45) 35%, rgba(16,16,16,0.55) 47%, rgba(0,0,0,0.5) 54%, rgba(17,17,17,0.41) 66%, rgba(43,43,43,0.37) 72%, rgba(28,28,28,0.33) 77%, rgba(19,19,19,0.26) 87%, rgba(19,19,19,0.17) 100%);
+    background: linear-gradient(135deg, rgba(102,102,102,0.17) 0%, rgba(102,102,102,0.28) 14%, rgba(71,71,71,0.38) 26%, rgba(44,44,44,0.45) 35%, rgba(16,16,16,0.55) 47%, rgba(0,0,0,0.5) 54%, rgba(17,17,17,0.41) 66%, rgba(43,43,43,0.37) 72%, rgba(28,28,28,0.33) 77%, rgba(19,19,19,0.26) 87%, rgba(19,19,19,0.17) 100%);
+}
+.panelcentrador {
+  z-index: 2;
+  width: 58%;
+
+}
+
+.panelcentrador .row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+@media (max-width:700px) {
+  .panelcentrador {
+    z-index: 2;
+    width: 90%;
+  }
+
+  .prefondo {
+    display: none;
+  }
+}
+
+@media (max-width:1100px) {
+  .panelcentrador {
+    z-index: 2;
+    width: 75%;
+  }
+}
+
+.input-field label {
+    color: #000000;
+    font-weight: 500;
+}
+
+.input-field label.active {
+    color: #227291;
+}
+
+
+.misbotones {
+    padding-left: 8px;
+    padding-right: 8px;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 13px;
+    font-size: 0.9em;
+    text-transform: capitalize;
+    font-variant: normal;
+    background-color: #6492b0;
+    background: #d0e4f7;
+
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #d0e4f7 0%, #7499af 33%, #7499af 33%, #6492b0 50%, #7599af 72%, #94d1ef 100%);
+
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #d0e4f7 0%,#7499af 33%,#7499af 33%,#6492b0 50%,#7599af 72%,#94d1ef 100%);
+
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #d0e4f7 0%,#7499af 33%,#7499af 33%,#6492b0 50%,#7599af 72%,#94d1ef 100%);
+}
