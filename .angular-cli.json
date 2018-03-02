@@ -21,7 +21,7 @@
       "styles": [
         "styles.css"
       ],
-      "scripts": ["../src/index.js","./node_modules/jquery/dist/jquery.min.js", "../src/materialize/js/materialize.js"],
+      "scripts": ["../src/index.js","../node_modules/jquery/dist/jquery.min.js", "../src/materialize/js/materialize.js"],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
