@@ -10,34 +10,44 @@
     </div>
   </div>
   <div class="row panel1" style="align-items: center">
-    <div class="col s12 m5 l5 center-align valign" style="margin: 0;
+    <div class="col s12 m6 l5 center-align valign-wrapper" style="margin: 0;
     padding: 0;
    ">
       <img src="assets/img/Escudo.png" class="responsive-img " style="
-    padding: 2.5% 0px 0px 0px;
+    padding: 4.5% 0px 0px 0px;
     margin: 0;" />
     </div>
-    <div class="col s12 m7 l7 panelLogin">
+    <div class="col s12 m6 l7 panelLogin">
       <h5 class="center-align">Inicio de Sesión</h5>
-      <form class="center-align" method="post">
+      <form class="center-align"  #formulario1="ngForm" (ngSubmit)="onSubmit()">
         <div class="row dosImputs" style="margin-left: auto;
     margin-right: auto;">
           <div class="input-field col s12">
-            <input id="Usuario" type="text" class="validate">
-            <label class="active" for="Usuario">Usuario</label>
+            <i class="material-icons prefix">account_circle</i>
+            <input  maxlength="10" id="Usuario" name="usuario" type="text"   class="{{estadoNombre}}" #usuario="ngModel"   [(ngModel)] = "ParametrosLogin.usuario" required>
+            <label class="{{acc1}}" for="Usuario" data-error="Invalido" data-success="Valido">Usuario</label>
           </div>
-          <div class="input-field col s12">
-            <input id="Clave" type="text" class="validate">
-            <label for="Clave">Contraseña</label>
+          <div class="input-field col s12 ">
+            <i class="material-icons prefix ">lock</i>
+            <input maxlength="10" id="Clave" name ="clave" type="password" class="{{estadoClave}}" #clave="ngModel" [(ngModel)] = "ParametrosLogin.calve" required >
+            <label class="{{acc2}}" for="Clave" data-error="Invalido" data-success="Valido">Contraseña</label>
           </div>
         </div>
         <div class="row filaBoton">
-          <input type="submit" class="btn misbotones waves-light waves-effect" value="Aceptar">
+          <input type="submit" class="btn waves-effect waves-light misbotones" [disabled]="actividadBtn"  value="Aceptar">
         </div>
         <div class="row">
-          <input type="button" class="btn misbotones waves-effect waves-light" value="Recuperar Contraseña">
+          <input type="button" class="btn waves-effect waves-light misbotones" value="Recuperar Contraseña">
         </div>
       </form>
     </div>
   </div>
+  <div class="row scale-transition scale-out">
+    <div class="col s12 m12 l12">
+      <div class="card-panel red accent-1 pulse center">
+          <span class="red-text text-accent-3 ">{{invalidoPor}}</span>
+      </div>
+    </div>
+  </div>
+
 </div>

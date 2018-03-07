@@ -1,4 +1,3 @@
-
 .appFondo{
   width: 100%;
   background-image: url('assets/img/blue-circuit-board_1527708.jpg');
@@ -115,4 +114,7 @@ body {
 
     /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(135deg, #d0e4f7 0%,#7499af 33%,#7499af 33%,#6492b0 50%,#7599af 72%,#94d1ef 100%);
+}
+input[type=submit]:disabled {
+  color: #5a5a5a;
 }
